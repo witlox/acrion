@@ -1,12 +1,16 @@
 language: node_js
-
 node_js:
-  - stable
-
+- stable
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run cover
-
-after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+- npm run cover
+after_script: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+deploy:
+  provider: npm
+  email: pim@witlox.io
+  api_key:
+    secure: CTNR7tposUB3aJP5/oPyGuxVeCcgvsgO5QjIvsHKW7cnnNLNnzKXT9b1NHYfvRbzzHm4Pgj085Wx9fHBpGeTO79XOZvfiTWfaP+8BT3uzFb7KqXbGfAqGevrS/pN/1gXa6f37qFizpNZeVjRm20d2XwSR0FdAFPl1N+cmPzDIWgBUZP5KEDxgQf26lasUQJcuRdzqIHGFgSyJflZ2r9ctJ04wKBAS+MlQDmpjR1mNJBwYNzj3/YeMdSw/sXPRBPe1NcTP279Z/bzMopaIWQZoECbNg31ENpKD4W/2illR33FKZ0I5KGOiiZ5rLX6ppfLbM3he7fc7ZPIpDZT//lI1MqinenM1rNk+fOVFn7QdaHeRRSWcXV2euRgYUjnD/ACZzBcWF6oI5CgVvUYZj96BSavf158ungGuag7hyzESB9XrArbMh7haWzpCZSJ2PfT/nVS4/zH1//ZPbEmhGw6wzVUgOrtRqu1M9qZ3LLHlePOAwLFn+Rivh51Rfg2jAXspJqoLBRq/h0UPJDz+/15AK4ikGlLjiCbt5Im4MSvN0byCTjHiwQwL1gfdz3cGu4URLNZmqLGfPDrvpVZFVah5KaC5aYsq1N/B1/efk4ChyueIiN35KM1EUOOg/AeMKePklzhmL04Rol7LMPK7D8KcDdeTLmcfZVqmVv3xI5FU0I=
+  on:
+    tags: true
+    repo: witlox/acrion

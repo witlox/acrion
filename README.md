@@ -1,4 +1,4 @@
-Acrion
+Acrion [![Build Status](https://travis-ci.org/witlox/acrion.svg?branch=master)](https://travis-ci.org/witlox/acrion) [![Coverage Status](https://coveralls.io/repos/github/witlox/acrion/badge.svg?branch=master)](https://coveralls.io/github/witlox/acrion?branch=master)
 =========
 
 A small library that tries to validate users are human, by Q&A.
