@@ -5,16 +5,16 @@ A small library that tries to validate users are human, by Q&A.
 
 ## Installation
 
-  `npm install @witlox/acrion`
+  `npm install acrion`
 
 ## Usage
 
-    let qa = require('@witlox/acrion');
+    let qa = require('acrion');
     let question = qa.question();
   
   Generates a random question
   
-    let qa = require('@witlox/acrion');
+    let qa = require('acrion');
     let question = qa.question();
     let result = qa.answer(question, 'some answer');
   
