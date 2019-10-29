@@ -1,21 +1,24 @@
-Number Formatter
+Acrion
 =========
 
-A small library that adds commas to numbers
+A small library that tries to validate users are human, by Q&A.
 
 ## Installation
 
-  `npm install @jdaudier/number-formatter`
+  `npm install @witlox/acrion`
 
 ## Usage
 
-    var numFormatter = require('@jdaudier/number-formatter');
-
-    var formattedNum = numFormatter(35666);
+    let qa = require('@witlox/acrion');
+    let question = qa.question();
   
+  Generates a random question
   
-  Output should be `35,666`
-
+    let qa = require('@witlox/acrion');
+    let question = qa.question();
+    let result = qa.answer(question, 'some answer');
+  
+  Returns true when answered correctly (case insensitive), otherwise false.
 
 ## Tests
 
