@@ -3,10 +3,7 @@
 const expect = require('chai').expect;
 const assert = require('chai').assert;
 
-const fs = require("fs");
-let content = fs.readFileSync('questions.json');
-let questions = JSON.parse(content);
-
+let questions = require('../data').questions;
 let qa = require('../index');
 
 describe('#acrionQuestionAnswer', function() {

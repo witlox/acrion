@@ -1,8 +1,4 @@
-'use strict';
-
-const fs = require("fs");
-let content = fs.readFileSync('questions.json');
-let questions = JSON.parse(content);
+questions = require('./data').questions;
 
 module.exports = {
 
@@ -21,6 +17,9 @@ module.exports = {
      * @return {boolean}
      */
     answer: function(question, answer) {
+        if ((typeof question === 'undefined' || !question) || (typeof answer === 'undefined' || !answer)) {
+            return false;
+        }
         if (!(question in questions)) {
             return false;
         }
