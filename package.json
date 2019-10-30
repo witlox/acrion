@@ -1,6 +1,6 @@
 {
   "name": "acrion",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Acrion is a Human verification module, e.g. check if the user is a human.",
   "main": "index.js",
   "scripts": {
