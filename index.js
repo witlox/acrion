@@ -1,8 +1,8 @@
 'use strict';
 
-const jf = require('jsonfile');
-
-let questions = jf.readFileSync('questions.json');
+const fs = require("fs");
+let content = fs.readFileSync('questions.json');
+let questions = JSON.parse(content);
 
 module.exports = {
 
