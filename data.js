@@ -13,6 +13,7 @@ let questions = {
     "What's the colour of snow": "white",
     "What is the colour of an orange": "orange",
     "What is the main color of the UN flag": "blue",
+    "What is the colour of coal": "black",
     "In which city is the Eiffel Tower located": "paris",
     "In which city is the Big Ben located": "london",
     "In which city is the Taj Mahal located": "agra",
