@@ -21,6 +21,14 @@ let questions = {
     "In which city is the Acropolis located?": "athens",
     "In which country is the Sydney Opera House located?": "australia",
     "In which US state is the Golden Gate Bridge located?": "california"
+    "What is the colour of the night sky?": "black"
+    "What colour is milk?": "white"
+    "In which country is British Columbia?": "Canada"
+    "In which country is New South Wales?": "Australia"
+    "In which country are the pyramids?": "Egypt"
+    "What is the main colour in the Swiss flag?": "red"
+    "What colour is mercury?": "silver"
+    "What is the main colour of the EU flag?": "blue"
 };
 
 module.exports = {
