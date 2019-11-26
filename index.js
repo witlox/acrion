@@ -23,6 +23,6 @@ module.exports = {
         if (!(question in questions)) {
             return false;
         }
-        return questions[question] === answer.toLocaleLowerCase();
+        return questions[question].toLocaleLowerCase() === answer.toLocaleLowerCase();
     }
 };
