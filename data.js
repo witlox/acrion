@@ -2,7 +2,6 @@
 
 let questions = {
     "What colour is the sky?": "blue",
-    "What colour is an apple?": "green",
     "What colour is the sea?": "blue",
     "What colour does the sun have?": "yellow",
     "What colour does the traffic light have when you have to stop?": "red",
